@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.Content{
+	float: left;
+	height: 220px;
+	width: 320px;
+	margin-right: 20px;
+	background-color: gray;
+	}
+.picture_box{
+	float: left;
+	margin-left: 10px;
+	margin-top:10px
+}
