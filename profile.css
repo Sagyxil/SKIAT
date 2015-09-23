@@ -2,13 +2,39 @@
 
 .Content{
 	float: left;
-	height: 220px;
-	width: 320px;
+	height: 550px;
+	width: 350px;
 	margin-right: 20px;
-	background-color: gray;
 	}
+	
 .picture_box{
 	float: left;
-	margin-left: 10px;
-	margin-top:10px
+	margin-left: 25px;
+	margin-top:25px
+}
+.profile_text_boxes{
+	float: center;
+	height: 300px;
+	width: 350px;
+	margin-top: 250px;
+	
+}
+.name_box{
+	float: left;
+	
+}
+
+.email_box{
+	float: left;
+	
+}
+
+.bio_box{
+	float: left;
+	
+}
+
+.save_button{
+	
+	
 }
