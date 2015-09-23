@@ -1,16 +1,31 @@
 @CHARSET "ISO-8859-1";
 
 #navbutton {
-	border: 0;
-	border-radius: 10px;
+	border: 2px solid black;
+	border-radius: 0px;
 	height: 0%;
 	width: 25%;
-	margin: 0 5 0 5;
+	margin: 0 5px 0 5px;
+	padding-left: 5px;
+	vertical-align: middle;
+	background-color: lightgray;
 	/* flex: growth_rate shrink_rate */
-	flex: 1 2;
-	-webkit-flex: 1 2;
+	flex: 2 1;
+	-webkit-flex: 2 1;
 	/* padding: 50 50 50 50; */
 }
+#navbutton:hover, #navbutton:focus{
+	animation-name: makeroundedrectangle;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	background-color: lightgreen;
+	color:			white;
+	border:			2px solid black;
+	border-radius:	7px;
+	flex: 			2 1;
+	-webkit-flex:	2 1;
+}
+
 #hidden {
 	border: 0px none;
 	clip: rect(0px, 0px, 0px, 0px);
@@ -21,20 +36,18 @@
 	position: absolute;
 	width: 1px;
 }
-#navbutton:hover, #navbutton:focus{
-	animation-name: expand;
-	animation-duration: 0.5s;
-	animation-iteration-count: 1;
+#searchtext {
 	flex: 2 1;
 	-webkit-flex: 2 1;
-}
-
-#searchtext {
-	flex: 3 1;
-	-webkit-flex: 3 1;
-	animation-name: expand;
+	border-radius: 0px;
+	animation-name: makeroundedrectangle;
 	animation-duration: 0.5s;
 	animation-iteration-count: 1;
+}
+#searchtext:focus {
+	flex: 3 1;
+	-webkit-flex: 3 1;
+	border-radius: 7px;
 }
 .searchbox {}
 .searchbox:focus {
@@ -46,19 +59,28 @@
 	display : flex;
 	display: -webkit-flex; /* Safari compatibility */
 	flex-direction: row;
+	
+	margin-left: 33%;
+	margin-right: 33%;
 }
 
-@keyframes expand {
-	from { flex: 1 1; }
-	to	  { flex: 2 1; }
+@keyframes makeroundedrectangle {
+	from {
+		/* height: 20px; */
+		border-radius: 0px;
+	}
+	to	  {
+		/* height: 40px; */
+		border-radius: 7px;
+	}
 }
 
-@-moz-keyframes expand {
-	from { flex: 1 1; }
-	to 	  { flex: 2 1; }
+/* @-moz-keyframes makeroundedrectangle {
+	from { height: 10%; }
+	to 	  { height: 20%; }
 }
 
-@-webkit-keyframes expand {
-	from { -webkit-flex: 1 1; }
-	to 	  { -webkit-flex: 2 1; }
-}
+@-webkit-keyframes makeroundedrectangle {
+	from { height: 10%; }
+	to 	  { height: 20%; }
+} */

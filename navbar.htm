@@ -3,15 +3,15 @@
 	<head>
 		<meta charset="ISO-8859-1">
 		<link href="navbar.css" rel="stylesheet" type="text/css">
-	</head>
+		</head>
 	<body class="navbar">
-		<button id="navbutton" class="home">Home</button>
-		<button id="navbutton" class="dashboard">Dashboard</button>
-		<button id="navbutton" class="profile">Profile</button>
-		<form role="search" method="get" action="/en-US/search">
+		<button name="home" id="navbutton" class="home" onClick="parent.changeMainView('home.htm');">Home</button>
+		<button name="dashboard" id="navbutton" class="dashboard" onClick="parent.changeMainView('main.htm');">Dashboard</button>
+		<button name="profile" id="navbutton" class="profile" onClick="parent.changeMainView('profile.htm');">Profile</button>
+		<form name="searchbox" role="search" method="get" action="/en-US/search">
 			<div>
 				<label id="hidden">Search</label>
-				<input id="searchtext" class="searchbox" autosave="searches" placeholder="Search"></input>
+				<input name="searchtext" id="searchtext" class="searchbox" autosave="searches" autocomplete="on" placeholder="Search" onchange="parent.changeMainView('search.htm');"></input>
 			</div>
 		</form>
 	</body>
