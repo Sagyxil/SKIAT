@@ -1,0 +1,22 @@
+@CHARSET "ISO-8859-1";
+
+iframe.navbar {
+	/* applies to all borders */
+	/* border:  0 none; */
+	
+	/* only show bottom border */
+	border-width: 0;
+	border-bottom: medium solid;
+	border-color: #000000;
+	/* Dimensions */
+	height: 40px;
+	width: 90%;
+	
+}
+iframe.maindisplay {
+	display: flex;
+	display: -webkit-flex;
+	
+	border: 0 none;
+	margin: 10px auto;
+}
