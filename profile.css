@@ -1,14 +1,93 @@
 @charset "UTF-8";
+@CHARSET "ISO-8859-1";
+
+iframe.navbar {
+	/* applies to all borders */
+	/* border:  0 none; */
+	
+	/* only show bottom border */
+	border-width: 0;
+	border-bottom: medium solid;
+	border-color: #000000;
+	/* Dimensions */
+	height: 40px;
+	width: 90%;
+	
+}
+iframe.maindisplay {
+	display: flex;
+	display: -webkit-flex;
+	border: 0 none;
+	margin: 10px auto;
+}
 
 .Content{
 	float: left;
-	height: 220px;
-	width: 320px;
+	height: 1000px;
+	width: 350px;
 	margin-right: 20px;
-	background-color: gray;
 	}
+	
 .picture_box{
 	float: left;
-	margin-left: 10px;
-	margin-top:10px
+	margin-left: 25px;
+	margin-top: 25px;
+	border: 5px solid black;
+	height: 200px;
+	width: 300px;
+}
+.profile_text_boxes{
+	float: center;
+	height: 300px;
+	width: 350px;
+	margin-top: 250px;
+	margin-left: 25px;
+	
+}
+.name_box{
+	float: left;
+	height: 30px;
+	width: 300px;
+	border: 2px solid black;
+	color: gray;
+	margin-top: 0px;
+}
+
+.email_box{
+	float: left;
+	height: 30px;
+	width: 300px;
+	border: 2px solid black;
+	color: gray;
+	margin-top: 20px;
+}
+
+.bio_box{
+	float: left;
+	height: 200px;
+	width: 300px;
+	border: 2px solid black;
+	color: gray;
+	margin-top: 20px;
+}
+
+.save_button{
+	float: left;
+//	height: 25px;
+//	width: 100px;
+	margin-top: 10px;
+	margin-left: 100px;
+	text-align: center;
+	
+//	border: 2px solid black;
+	border-radius: 2px;
+	height: 0%;
+	width: 25%;
+	padding-left: 5px;
+	vertical-align: middle;
+	background-color: lightgray;
+	/* flex: growth_rate shrink_rate */
+	flex: 2 1;
+	-webkit-flex: 2 1;
+	/* padding: 50 50 50 50; */
 }
