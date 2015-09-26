@@ -10,8 +10,8 @@
 	vertical-align: middle;
 	background-color: lightgray;
 	/* flex: growth_rate shrink_rate */
-	flex: 2 1;
-	-webkit-flex: 2 1;
+	flex: 0 1 auto;
+	-webkit-flex: 0 1 auto;
 	/* padding: 50 50 50 50; */
 }
 #navbutton:hover, #navbutton:focus{
@@ -59,6 +59,9 @@
 	display : flex;
 	display: -webkit-flex; /* Safari compatibility */
 	flex-direction: row;
+	
+	justify-content: center;
+	align-items: center;
 	
 	margin-left: 33%;
 	margin-right: 33%;

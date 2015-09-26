@@ -1,15 +1,14 @@
 @CHARSET "ISO-8859-1";
 
-.image-list {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	display: -moz-box;
+.image-grid {
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	
+	flex: 1 1 auto;
 }
 
-.image-item {
-	width: 100px;
-	margin: auto;
+.image-grid li {
+	list-style-type: none;
 }
